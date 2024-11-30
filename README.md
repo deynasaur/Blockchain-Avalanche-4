@@ -1,41 +1,49 @@
-# Project Title
+# Project: Degen Token (ERC-20)
 
-Simple overview of use/purpose.
+This project is an assessment in the Metacrafters Avalanche Course - ETH + AVAX PROOF: Intermediate EVM Course `Module: Building on Avalanche - ETH + AVAX`
 
-## Description
-
-An in-depth paragraph about your project and overview of use.
+This is a Solidity smart contract for an ERC20 token called **Degen (DGN)** and was deployed on the Avalanche Fuji C-Chain Testnet.
 
 ## Getting Started
 
-### Installing
+### Requirements
+* [Metamask Wallet](https://metamask.io/download/)
+* [Remix IDE](https://remix.ethereum.org/)
+* [Snowtrace Testnet](https://testnet.snowtrace.io/)
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### Setup
+* Create a Metamask wallet account.
+* Claim a Fuji (C-Chain) AVAX token from the [Avalanche Testnet Faucet](https://core.app/tools/testnet-faucet/?subnet=c&token=c) for the Metamask address.
+  * For the coupon code, please proceed to the [Avalanche](https://guild.xyz/avalanche) website for more details.
+* Go to Snowtrace Testnet and sign in using the Metamask wallet.
 
-### Executing program
+### Deployment of the Contract
+* Proceed to [Remix](https://remix.ethereum.org/).
+* Create a new file and save it as `DegenToken.sol`. Copy the [code]() from this repository and proceed to paste it to the newly created file.
+* Select `Deploy & run transactions` tab and change the **ENVIRONMENT** to `Injected Provider - Metamask`.
+* Copy and **ACCOUNT** address in Remix and paste it on the input field beside the `Deploy` to mark it as the contract owner and proceed to click `Deploy`.
+* To view the transactions of the smart contract on [Snowtrace Testnet](https://testnet.snowtrace.io/), copy the contract address available and proceed to search it on the site.
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Contract Functionalities
 
-## Help
+`mint`: Only the contract owner has the permission to mint tokens to any accounts.
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+`burn`: Players can destroy their own tokens.
 
-## Authors
+`transfer`: Players can transfer their tokens to another address.
 
-Contributors names and contact info
+`checkBalance`: Players can check their token balance.
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+`showStore`: This will display the ID, Model, and Cost of the Rackets available in the store.
 
+`redeem`: Players will redeem tokens for a racket by entering the ID of a racket.
+
+`getMyRackets`: Players will be able to see the ID of the racket that they possess.
+
+## Author/s
+
+Dana Rivera
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see LICENSE for details
